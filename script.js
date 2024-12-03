@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Slow down the time increment
             t += 0.005; // Decrease the increment to slow down
 
-            c.globalAlpha = 0.5; // Set transparency level
+            c.globalAlpha = 0.2; // Set transparency level
             c.beginPath();
             c.arc(
                 target.x,
