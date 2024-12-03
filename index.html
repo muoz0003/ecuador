@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discover Ecuador: Four Worlds, One Destination.</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    </head>
+    <body>
+
+        <canvas id="animated-background"></canvas>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+            <a class="navbar-brand" href="#">Discover Ecuador</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="jumbotron text-center">
+            <h1 class="display-5 mb-4 py-2">Discover Ecuador: A Canvas of Culture, Nature, and Heritage</h1>
+            <p class="lead text-justify py-2">Journey through a country where the diversity of landscapes and experiences is as striking as its natural beauty. Begin your adventure in the majestic Andes, where snow-capped volcanoes, emerald valleys, and bustling highland markets offer a glimpse into Ecuador’s rich culture and history.</p>
+            
+        </header>
+
+        <section id="gallery" class="container my-2 py-1">
+            <h2 class="display-5 text-center mb-4">Rich Culture, Majestic Nature.</h2>
+            <div class="row" id="gallery-container"></div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Discover Ecuador: Four Worlds, One Destination</h2>
+                <p class="text-center">Ecuador is a land of vibrant contrasts, where natural beauty, rich history, and diverse cultures come together. From the towering peaks of the Andes and the lush Amazon rainforest to the pristine beaches of the Pacific Coast and the unique wildlife of the Galápagos Islands, Ecuador offers a world of inspiration. Its rich cultural heritage reflects a fusion of Indigenous, African, and Spanish influences, seen in everything from ancient artifacts to contemporary art. Through this gallery, experience Ecuador’s essence, where every piece tells a story of resilience, tradition, and breathtaking natural wonders.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Get in touch</h2>
+                <form action="https://formspree.io/f/mnnaykbd" method="POST" class="artist_form contact_form">
+                    <input type="text" name="name" placeholder="Your name...">
+                    <input type="email" name="email" placeholder="Your email...">
+                    <input type="tel" name="phone" placeholder="Your phone...">
+                    <textarea rows="4" placeholder="Your message..." name="message"></textarea>
+                    <div class="button-area">
+                        <button type="submit" class="btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2024 <a href="https://muoz0003.github.io/portfolio/" target="_blank">David Muñoz Jensen</a>. All rights reserved.</p>
+        </footer>
+
+        <!-- Modal Structure -->
+        <div id="modal" class="modal">
+            <span id="close" class="close" aria-label="Close">&times;</span>
+            <img id="modal-img" class="modal-content" alt="">
+            <div id="caption" class="caption"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

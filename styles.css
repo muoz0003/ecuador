@@ -1,0 +1,231 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header.jumbotron {
+    background: url('assets/ecuador-banner.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff; /* Change text color to white */
+}
+
+h1, h2 {
+    margin: 20px 0;
+    text-align: center;
+    color: #fff; /* Change text color to white */
+}
+
+p {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    padding: 0 20px;
+    color: #fff; /* Change text color to white */
+}
+
+/* Custom Navbar Styles */
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    border-bottom: 1px solid #444; /* Subtle border */
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.custom-navbar .nav-link {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Container for the gallery */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the thumbnails horizontally */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Each cell in the gallery */
+.gallery-cell {
+    flex: 1 1 200px; /* Grow and shrink with a base width */
+    max-width: 200px;
+    margin: 10px; /* Adjust spacing between thumbnails */
+    overflow: hidden; /* Hide overflow to ensure images fit within the cell */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Gallery images */
+.gallery-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the entire cell */
+    display: block; /* Removes the small gap below images */
+    transition: transform 0.2s;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.gallery-cell img:hover {
+    transform: scale(1.05);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.caption {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    overflow: auto;
+    max-height: 200px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 60px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+/* Contact Form Styles */
+.contact_form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 10px;
+}
+
+.contact_form input[type="text"],
+.contact_form input[type="email"],
+.contact_form input[type="tel"],
+.contact_form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333; /* Dark background for inputs */
+    color: #fff; /* White text color */
+}
+
+.contact_form textarea {
+    resize: vertical;
+}
+
+.contact_form .button-area {
+    text-align: center;
+}
+
+.contact_form .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact_form .btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Animated Background Canvas Styles */
+#animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the canvas is behind other content */
+    background-color: black; /* Set background color to black */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+    .close {
+        font-size: 30px;
+        top: 15px;
+        right: 25px;
+    }
+}
